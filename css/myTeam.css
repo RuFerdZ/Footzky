@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet");
+
+
+.team{
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 500px;
+  background: #fff;
+  margin: 70px auto 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.teamset{
+	margin-left:5%;
+}
+
+.ourTeam {
+  margin-top: -10px;
+  width: 20%;
+  margin-left: 45%;
+  height: 30px;
+  position: absolute;
+  border-left: 4px solid orange;
+  padding: 10px;
+}
+
+.ourTeam h1{
+  font-size: 40px;
+  font-family: 'Righteous';
+}
+
+.team .member{
+  position: relative;
+  width:300px;
+  height: 400px;
+  background: #ff0;
+  margin-left:  18px;
+  margin-right: 19px;
+  margin-bottom: 30px;
+  margin-top:70px;
+  box-sizing: border-box;
+  display: inline-block;
+  box-shadow: 10px 5px 10px grey;
+}
+
+
+.team .member:hover{
+  box-shadow: 20px 10px 20px grey;
+  transition: .5s;
+}
+
+
+.team .member .pic{
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .pic img{
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 2s;
+}
+
+
+.team .member:hover .pic img{
+  transform: scale(1.2);
+}
+
+
+.team .member .details {
+  position: absolute;
+  top:10px;
+  left:10px;
+  right: 10px;
+  bottom: 10px;
+  background:rgba(0,0,0,0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+
+.team .member:hover .details{
+  transform: scaleY(1);
+}
+
+.team .member .details .content {
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+
+
+.team .member .details .content h2{
+
+  margin-top: -30%;
+  margin-left: -10px;
+  padding: 0px;
+  font-size: 30px;
+  color: orange;
+}
+.team .member .details .content p{
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 0px;
+  margin-left:-18px;
+}
+
+.team .member .details .content a{
+  text-decoration: none;
+  margin-top:10%;
+  margin-left:-18px;
+}
+
+.team .member .details .content a:hover{
+  color: white;
+}
+
+
+@media only screen and (max-width:1100px){
+  header .navbar{
+    display: none;
+  }
+
+  .team .member{
+  margin-top:100px;
+}
+
+.ourTeam {
+  width: 70%;
+  margin-left: 5%; 
+}
+
+.team .member{
+  position: relative;
+  width:300px;
+  height: 400px;
+  background: #ff0;
+  margin-left:  15%;
+  margin-right: 19px;
+  margin-bottom: 30px;
+  margin-top:70px;
+  box-sizing: border-box;
+  display: inline-block;
+  box-shadow: 10px 5px 10px grey;
+}
+}

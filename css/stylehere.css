@@ -1,0 +1,251 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 999999;
+}
+
+#body {
+	background-image:url("images/stamford.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+#mainText {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:35px;
+}
+
+#mainText1 {
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:40px;
+	text-align:center;
+	color:#6600ff;
+	margin-top:15px;
+}
+
+#para {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+}
+
+#para1 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:24px;
+	text-align:center;
+}
+
+.navbar ul li a{
+  font-family: "Righteous",sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  background: url("images/logo final.png");
+  background-size: cover;
+  height: 80px;
+  width: 300px;
+  position: absolute;
+  margin-top: 4px;
+}
+
+.navbar{
+  width: 110%;
+  padding: 0px;
+  position: fixed;
+  top:0px;
+  text-align: center;
+  transition: .5s;
+  background: rgba(0,0,0,0.5);
+}
+
+.bodybelow {
+	background-color:#e6ccff;
+	-ms-flex: 70%;
+	flex: 100%;
+	padding: 20px;
+	height:1280px;	
+}
+
+.bottom {
+	background-color:#e6ccff;
+	-ms-flex: 70%;
+	flex: 100%;
+	padding: 20px;
+	height:1450px;	
+}
+
+.bottomlast {
+	background-color:#e6ccff;
+	-ms-flex: 70%;
+	flex: 100%;
+	padding: 20px;
+	height:1200px;	
+}
+
+.fakeimg {
+  background-color: #ff99ff;
+  width: 450px;
+  height:400px;
+  float:right;
+  padding: 20px;
+  margin-right:80px;
+}
+
+.fakeimg1 {
+  background-color: #ff99ff;
+  width: 1230px;
+  height:150px;
+  float:left;
+  padding: 20px;
+  margin-left:100px;
+  margin-top:30px;
+  margin-bottom:50px;
+}
+
+
+.image1 {
+	width:640px;
+	height:425px;
+	margin-left:70px;
+	margin-top:10px;
+	border-style:ridge;
+	border-width:2px;
+	border-color:black;
+	padding:1px;
+}
+
+.image2 {
+	width:350px;
+	height:240px;
+	margin-left:95px;
+	margin-top:80px;
+	border:3px dashed #2d2d86;
+	padding:2px;
+	float:left;
+}
+
+.image3 {
+	width:550px;
+	height:400px;
+	margin-left:120px;
+	margin-top:60px;
+	border:2px solid #2e2eb8;
+	padding:2px;
+	float:left;
+}
+
+.image4 {
+	width:370px;
+	height:260px;
+	margin-left:85px;
+	margin-top:80px;
+	border:1px solid #000080;
+	padding:2px;
+	float:left;
+}		
+
+#text1 {
+	color: #000066;
+	font-family:"Lobster", serif;
+	font-size:45px;
+	margin-left:35px;
+	margin-top:50px;
+}
+
+#text2 {
+	color: #000066;
+	font-family:"Lobster", serif;
+	font-size:45px;
+	margin-left:50px;
+	margin-top:50px;
+	text-align:left;
+}
+
+#text3 {
+	color: #000066;
+	font-family:"Lobster", serif;
+	font-size:42px;
+	margin-left:50px;
+	margin-top:50px;
+	text-align:center;
+}
+
+.navbar a:hover .logo{
+  opacity: 0.9;
+}
+
+.navbar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 25px 50px;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.navbar ul li:hover{
+  background: orange;
+  transition: .5s;
+}
+
+
+.stadiumPic{
+  background: url("images/camp_nou.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+
+#heading {
+	text-align:left;
+	margin-top:180px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:60px;
+	color:#ff8000;
+	opacity:0.8;
+}
+
+.picOverlay{
+  width: 100%;
+  height: 500px;
+  background: rgba(0,0,0,.5);
+}
+
+.stadiumPic .picOverlay h1{
+  color: white;
+  margin-left: 10%;
+  margin-top: 10%;
+  position: absolute;
+  font-size: 60px;
+}
+
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: grey;
+  width:100%;
+  height:550px;
+}
+
+#top {
+  background-color: #00802b;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-style: sollid;
+  border-width:2px;
+  border-color:#003312;
+  cursor: pointer;
+}

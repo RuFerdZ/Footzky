@@ -1,0 +1,28 @@
+/* css form for the cv */
+
+
+table,td{
+	border-collapse:collapse;
+	padding:20px 20px;
+	color:#3A2F0B;
+	
+}
+
+
+td#format{
+	
+	border-bottom:3px solid #0B0B3B;
+}
+
+
+
+td#eq{
+	
+	border-bottom:3px solid #0B0B3B;
+	border-top:3px solid #0B0B3B;
+}
+
+h2{
+	text-align:center;
+	color:black;
+}

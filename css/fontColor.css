@@ -1,0 +1,40 @@
+.fontcolor {
+  background-color: #ffff33;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+  border-style: double;
+  border-width:2px;
+  border-color:#cc5200;
+  cursor: pointer;
+}
+
+.fontcolor:hover, .fontcolor:focus {
+  background-color: #ff1a1a;
+}
+
+.down {
+  position: relative;
+  display: inline-block;
+}
+
+.down-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.down-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.down a:hover {background-color: #ddd;}
+
+.show {display: block;}

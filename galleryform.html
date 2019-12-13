@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form|Footzky.com</title>
+  <link rel="icon" type="image/ico" href="css/images/onlylogo.png" />
+
+	<link rel = "stylesheet" type = "text/css" href = "css/formstyle.css" />   
+</head>
+
+<center>
+<a href = "mainGallery.html">
+<button type="button" id = "button">Go Back <<</button>
+</a>
+<body link="grey" class="body">
+
+<div id = "myNav" class="content">
+<form id = "form">
+<h1>Whats in your Mind...!!</h1>
+</br>
+
+<div class="textbox">
+<p><i>Enter your name :</i></p>   
+<input type="text" placeholder="Name" id = "name">
+</div>
+</br></br>
+
+<div class="textbox">
+<p><i>Your Date of Birth :</i></p> 
+<input type="date" placeholder="D.O.B" id = "date">    
+</div>
+<br></br>
+
+<P><i>Chose nationality : </i></p>
+<div class="radiobutton">
+<input type="radio" name="nationality" value="Asian" id = "national" > Asian</br>
+<input type="radio" name="nationality" value="Europe" id = "national"> Europian</br>
+<input type="radio" name="nationality" value="American(North)" id = "national"> North American</br>
+<input type="radio" name="nationality" value="American(South)" id = "national"> South American</br>
+<input type="radio" name="nationality" value="Africa" id = "national">African</br>
+<input type="radio" name="nationality" value="Other" id = "national">Other</br>
+</div>
+<br></br>
+
+<div class="textbox">
+<p><i>Enter country :</i></p>
+<input type="text" placeholder="Country" id = "country">
+</div>
+<br></br>
+
+<P><i>Chose skill level : </i></p>
+<div class="radiobutton">
+<input type="radio" name="level" value="Beginner" id = "level"> I am a Beginner</br>
+<input type="radio" name="level" value="Intermediate" id = "level"> I know some skills</br>
+<input type="radio" name="level" value="Good" id = "level"> I play for my Domestic Team</br>
+<input type="radio" name="level" value="Expert" id = "level"> I play for my National Team</br> 
+</div>
+<br></br>
+
+<P><i><b>Who do you think is the best ever : </b></i></p></br>
+<div class="radiobutton">
+<label>
+  <input type="radio" name="goat" value="Ronaldo">
+  <img src="css/images/ronaldo.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="goat" value="Messi">
+  <img src="css/images/messi.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="goat" value="Maradona">
+  <img src="css/images/maradona.jpg" width="240px" height="160px" id="imageplayer">
+</label></br>
+<label>
+  <input type="radio" name="goat" value="Cruyff">
+  <img src="css/images/cruyff.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="goat" value="Ronaldinho">
+  <img src="css/images/ronaldinho.jpg" width="240px" height="160px" id="imageplayer">
+</label> 
+</div>
+</br></br>
+
+<P><i><b>Your Favourite league : </b></i></p>
+<div class="radiobutton">
+<label>
+  <input type="radio" name="league" value="english">
+  <img src="css/images/premierleaguelogo.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="league" value="spanish">
+  <img src="css/images/laliga.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="league" value="italian">
+  <img src="css/images/italian.jpg" width="240px" height="160px" id="imageplayer">
+</label></br>
+<label>
+  <input type="radio" name="league" value="french">
+  <img src="css/images/french.jpg" width="240px" height="160px" id="imageplayer">
+</label>
+<label>
+  <input type="radio" name="league" value="other">
+  <img src="css/images/other.jpg" width="240px" height="160px" id="imageplayer">
+</label> 
+</div>
+<br></br></br>
+
+<input type="submit" value="Press here to Submit" onclick = "myFunction()">
+
+</div>
+<a href = "#myNav"><button type="button" id = "button">Go to the Top</button></a>
+</form>
+<script>
+function myFunction() {
+	var name = document.getElementById('name').value;
+	var date = document.getElementById('date').value;
+	var national = document.getElementById('national').value;
+	var country = document.getElementById('country').value;
+	var level = document.getElementById('level').value;
+	window.alert(name + ", you are born in " + date + ". And you are from " + country + ". Thank you for your responce."); 
+	
+}
+
+
+</script>
+
+        
+</body>
+</center>
+</html>

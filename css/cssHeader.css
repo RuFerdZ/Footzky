@@ -1,0 +1,82 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 999999;
+}
+.active {
+  border-bottom: 8px solid orange;
+}
+
+
+.navbar ul li a{
+  font-family: "Righteous",sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  background: url("images/logo final.png");
+  background-size: cover;
+  height: 80px;
+  width: 300px;
+  position: absolute;
+  margin-top: 4px;
+}
+
+.navbar{
+  width: 110%;
+  padding: 0px;
+  position: fixed;
+  top:0px;
+  text-align: center;
+  transition: .5s;
+  background: rgba(0,0,0,0.5);
+}
+
+.navbar a:hover .logo{
+  opacity: 0.9;
+}
+
+.navbar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 25px 50px;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.navbar ul li:hover{
+  background: orange;
+  transition: .5s;
+}
+
+
+.stadiumPic{
+  background: url("images/ball_fire.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+
+.picOverlay{
+  width: 100%;
+  height: 500px;
+  background: rgba(0,0,0,.5);
+}
+
+.stadiumPic .picOverlay h1{
+  color: #ffff80;
+  margin-left: 10%;
+  margin-top: 14%;
+  position: absolute;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 55px;
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Welcome</title>
+		<link rel="icon" type="image/ico" href="css/images/onlylogo.png" />
+	<a href="index.html">
+	<img src="css/images/logo Final.png" width="500px" height="150px" float="right" ></a>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	</head>
+	
+<body class="ppt">
+	<div id= "timer">4</div>	
+		<h1 id="C4" class="down">Footzky.com</h1>
+			<div class="a">
+						<div id="name" >
+							<p>2018262 Imsar Ahamed</p>
+							<p>2018194 Rusiru Fernando</p>
+							<p>2018223 Inshaf</p>
+							<p>2017062 Udara Shalini</p>
+						</div>	
+				<script>
+					setInterval(function(){
+						var div= document.querySelector("#timer");
+						var count= div.textContent*1-1;
+						div.textContent= count;
+						if(count<=0){
+							window.location.href="index.html";
+						}
+					},1000);
+				</script>
+
+				<footer class="footerppt"> 
+					Page by : M.I.Imsar Ahamed (2018262). My info <a href="cv.html" target="_blank" style="color:black;">isthikar.2018262@iit.ac.lk</a> here.
+				</footer>
+			</div >
+</body>
+</html>
+		
+
+	
+

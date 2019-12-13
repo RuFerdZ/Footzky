@@ -1,0 +1,539 @@
+
+@import url("https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Righteous', sans-serif;
+}
+
+
+
+
+
+
+/*presentation page*/
+.ppt {
+  background:url('images/russia.jpg');
+  background-attachment: fixed;
+  width: 100%;
+  font-family: 'Righteous', cursive;
+  font-size: 18px;
+  opacity: 0.9;
+  color: grey ;
+  }
+  
+  #C4{
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  }
+
+  #name{
+  font-family: 'Righteous', cursive;  
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  div.a {
+    text-align: center;
+  }
+  
+  .down{
+    margin-top:20px;
+  }
+  #timer{
+    display: none;
+  }
+ .footerppt {
+  width: 100%;
+  height: 35%;
+  border-radius: 30px;
+  padding: 5px 5px 8px 20px;
+  background:#FFA500;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 16px;
+  margin-top: 250px;
+  }
+
+
+/*navbar*/
+
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 999999;
+}
+
+.navbar ul li a{
+  font-family: "Righteous",sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  background: url("images/logo final.png");
+  background-size: cover;
+  height: 80px;
+  width: 300px;
+  position: absolute;
+  margin-top: 4px;
+}
+
+.navbar{
+  width: 100%;
+  padding: 0px;
+  position: fixed;
+  top:0px;
+  text-align: center;
+  transition: .5s;
+  background: rgba(0,0,0,0.5);
+}
+
+.navbar a:hover .logo{
+  opacity: 0.9;
+}
+.navbar ul{
+  margin-left:6%;
+}
+.navbar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 25px 50px;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.navbar ul li:hover{
+  background: orange;
+  transition: .5s;
+}
+
+.active {
+  border-bottom: 8px solid orange;
+}
+
+
+
+
+
+/*landing page*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.landing-page{
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.landing-page::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/back.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .3;
+  animation: anim 25s linear infinite;
+}
+
+.scroll{
+  scroll-behavior: smooth;
+  transition: 2s;
+  color: white;
+}
+
+@keyframes anim {
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.page-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.landLogo
+{
+  height: 321px;
+  width: 410px;
+  margin-left: 20%;
+  background: url("images/onlylogo.png");
+  background-size: cover;
+  opacity: .8;
+}
+
+.page-content h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.page-content a{
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid orange;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.4s linear;
+}
+.page-content a:hover{
+  color: black;
+  background: orange;
+}
+
+
+
+/*about us*/
+.aboutUs{
+  width:80%;
+  padding: 10%;
+  background-color: #ecf0f1;
+
+}
+
+.aboutUs .aboutText{
+  width: 60%;
+}
+.aboutUs h1{
+  color: #34495e;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px grey;
+}
+.aboutUs .aboutText p{
+  margin-left: -2.5%;
+  text-align: left;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.aboutUs .aboutText .line{
+  position: absolute;
+  border-left: 4px solid #E38E42;
+  width: 2%;
+  height:45px;
+  margin-left: -1%;
+  margin-top: -5px;
+}
+
+.aboutUs .aboutImg{
+  background: url("images/kick2.png");
+  background-size: cover;
+  width: 39%;
+  height: 825px;
+  margin-left: 50%;
+  margin-top: -44%;
+  position: absolute;
+}
+
+/*our services section*/
+
+.services{
+  width: 100%;
+  height: 600px;
+  background: url("images/parallax.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.services .serv{
+  position: absolute;
+  margin-top: 10px;
+  color: white;
+  font-size: 40px;
+  margin-left: 40%;
+  border-left: 5px solid orange;
+  padding-left: 1%;
+}
+.services .servicesOverlay{
+  background: rgba(0, 136, 153,0.);
+  width: 100%;
+  height: 600px;
+}
+
+.quote{
+  width: 90%;
+  margin-left: 5%;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+ .quote .box{
+  position: relative;
+  margin-top: 100px;
+  width: 200px;
+  height:  400px;
+  background: #973d5a;
+  overflow: hidden;
+  transition: .5s;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: -10px 25px 50px rgba(0,0,0,.2);
+ }
+
+ .quote .box:hover{
+    box-shadow: -20px 50px 100px rgba(0,0,0,.7);
+    transition: 1s;
+ }
+
+.quote .bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.quote .box.service1:hover ~.bg,.quote .box.service1:hover{
+  opacity: 1;
+  background: linear-gradient(#03a9f4,#e91e63);
+  transition: 1s;
+}
+
+
+.quote .box.service2:hover ~.bg,.quote .box.service2:hover{
+  opacity: 1;
+  background: linear-gradient(#ffc107,#19fd36);
+  transition: 1s;
+}
+
+.quote .box.service3:hover ~.bg,.quote .box.service3:hover{
+  opacity: 1;
+  background: linear-gradient(#ffc107,#e91e63);
+  transition: 1s;
+}
+
+.quote .box.service4:hover ~.bg,.quote .box.service4:hover{
+  opacity: 1;
+  background: linear-gradient(#03a9f4,#e91e63);
+  transition: 1s;
+}
+
+.serviceTime,.serviceQuiz,.serviceDelivery{
+  height: 150px;
+  width: 400px;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+
+
+.box:hover.serviceTime{
+  margin-top: 20%;
+  margin-left: 20%;
+  transition: 2s;
+}
+
+.box:hover.serviceQuiz{
+  margin-top: 20%;
+  margin-left: 20%;
+  transition: 2s;
+}
+
+.box:hover.serviceDelivery{
+  margin-top: 20%;
+  margin-left: 20%;
+  transition: 2s;
+}
+
+.box:hover.serviceppt{
+  margin-top: 20%;
+  margin-left: 20%;
+  transition: 2s;
+}
+
+
+.quote .box h2{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.quote .box:hover h2{
+  color: #fff;
+}
+
+.services a{
+  text-decoration: none;
+  color:black;
+}
+
+.services h3{
+  color: white;
+}
+
+.services p{
+  font-size: 20px;
+}
+
+
+
+.quote .box:before{
+  content: "";
+  position: absolute;
+  top:0px;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+  pointer-events: none;
+
+}
+.quote .box:after{
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  opacity: .1;
+  background: rgba(255,255,255,.2);
+  pointer-events: none;
+  filter: invert(1);
+}
+
+.quote .box:hover:after{
+  filter: invert(0);
+}
+
+
+/*smoothscroll*/
+
+.scrollup{
+  width: 70px;
+  height: 70px;
+  background:rgba(0,0,0,0.5);
+  position: relative;
+  font-size: 40px;
+  float: right;
+  margin-right: 3%;
+  transition: 1s;
+  margin-bottom: 5px;
+}
+
+.scrollup h1{
+  margin-left: 16%;
+  color: orange;
+  margin-top: 4%;   
+  transition: 1s;
+}
+
+.scrollup:hover{
+  background: orange;
+  transition: 0.8s;
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.scrollup:hover h1{
+  color: white;
+  transition: 0.8s;
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  height: 50px;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 1%;
+}
+
+footer a{
+  text-decoration: none;
+  color: purple;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px){
+  header .navbar{
+    display: none;
+  }
+
+  .landLogo
+{
+  height: 321px;
+  width: 410px;
+  margin-left: -9%;
+  background: url("images/onlylogo.png");
+  background-size: cover;
+  opacity: .8;
+}
+.aboutUs .aboutText{
+  width: 100%;
+}
+
+.aboutUs .aboutImg{
+  display:none;
+}
+
+.quote .box{
+  width: 150px;
+  height:  200px;
+ }
+.services{
+  height: 700px;
+}
+
+.services .servicesOverlay{
+  height: 700px;
+}
+
+.services .serv{
+  margin-left: 10%;
+  padding-left: 1%;
+}
+
+.aboutUs .aboutText p{
+  margin-left: -2.5%;
+  text-align: left;
+  font-size: 10px;
+  color: #2c3e50;
+}
+}

@@ -1,0 +1,118 @@
+.header {
+    height:300px;
+	margin-left:10%;
+	margin-right:10%;
+    background-color:#a366ff;
+	border:2px double #3d0099;
+}
+
+#body {
+	background-image:url("images/32k-wallpaper-1366x768.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	
+}
+
+
+.picture{
+   width:290px;
+   height:260px;
+   padding: 5px;
+   float:right;
+   border: 2px solid black;
+   margin-right:10px;
+   margin-top:10px;
+  
+}
+
+#head {
+	color :#00004d;
+	font-size:50px;
+	font-family:"Lobster", serif;
+	margin-bottom:10px;
+	position:center;
+	text-align:left;
+	margin-left:25px;
+	
+}
+
+.nav
+{
+  height : 1035px;
+  background-color:#bfbfbf;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+.right
+{
+    float: left;
+    margin-top: 2px;
+    padding-left:5px;
+    height: auto;
+    width: 99%;
+    background-color: #f3e6ff;
+	border-style: double; 
+    }
+
+.left
+{
+    float: left;
+    margin-top: 50px;
+    margin-right: -90px;
+    height: relative;
+    width: 10%;
+    background-color: #4160E8;
+    }
+    
+#footer
+{
+    height:40px;
+    clear:both;
+    position: relative;
+    background-color: #C1E3E1;
+	text-align:center;
+	margin-right:10%;
+	margin-left:10%;
+    }
+    
+h3
+{
+    text-decoration: underline;
+    }
+
+table
+{
+    border: 1px dashed black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #E88741;
+    }
+
+#course-name
+{
+    font-weight:bold;
+    }
+#heading
+{
+    font-weight:bold;
+    }
+	
+	
+#scroll {
+  background-color: #00802b;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-style: sollid;
+  border-width:2px;
+  border-color:#003312;
+  cursor: pointer;
+}
